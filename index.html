@@ -21,6 +21,8 @@
     <script src="js/ratchet.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="http://tjskatn1.cafe24.com/js/map_app.js"></script>
+
 <script>
   var pushNotification;
 
@@ -28,6 +30,7 @@
          document.addEventListener("deviceready", onDeviceReady, false);
 }
   function onDeviceReady() {
+      display_main();
         // Register the event listener
         var uuid=device.uuid;
             // uuid 정리 
@@ -77,7 +80,7 @@ navigator.notification.activityStart("PlusPay", "updating");
         window.cache.clear( success, error );
 
         
-      display_main();
+      
 
  
     }
@@ -142,5 +145,4 @@ navigator.notification.activityStart("PlusPay", "updating");
   </body>
 </html>
 
-<script src="http://tjskatn1.cafe24.com/js/map_app.js"></script>
 
