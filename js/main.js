@@ -96,18 +96,8 @@ function onNotificationGCM(e) {
 function json_call(reg_id) {
       var reg_id=reg_id;
       var deviceid=device.uuid;
-      alert(reg_id." ".deviceid);
-      // gcm reg_id 등록  
-         $.post("http://tjskatn1.cafe24.com/gcm_reg_app.php",
-   {
-    reg_id:reg_id,
-    deviceid:deviceid
-   },
-   function(data){
-    var data;
-    
-   //  alert("ok");
-   })
+      alert(reg_id+" "+deviceid);
+      
        } 
 
 
