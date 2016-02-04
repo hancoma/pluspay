@@ -105,6 +105,7 @@ function json_call(reg_id) {
    },
    function(data){
     var data;
+    alert(data);
     
    //  alert("ok");
    })
@@ -176,7 +177,5 @@ navigator.notification.activityStart("PlusPay", "updating");
         
       
 
-  check_uuid(uuid);
- 
  
     }
